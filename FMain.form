@@ -1,0 +1,36 @@
+# Gambas Form File 3.0
+
+{ Form Form
+  MoveScaled(0,0,52,21)
+  Font = Font["-2"]
+  Background = &HBFBFBF&
+  Text = ("IRC")
+  { Label1 Label
+    MoveScaled(-1,-1,12,4)
+    Text = ("irc :ip")
+  }
+  { TextBox1 TextBox
+    MoveScaled(18,0,30,3)
+    Text = ("127.0.0.1")
+  }
+  { Label2 Label
+    MoveScaled(0,2,14,3)
+    Text = ("port")
+  }
+  { TextBox2 TextBox
+    MoveScaled(18,3,30,3)
+    Text = ("8080")
+  }
+  { Label3 Label
+    MoveScaled(0,6,8,3)
+    Text = ("file")
+  }
+  { TextBox3 TextBox
+    MoveScaled(18,6,30,4)
+    Text = ("~/main.txt")
+  }
+  { Button1 Button
+    MoveScaled(1,11,51,5)
+    Text = ("upload")
+  }
+}

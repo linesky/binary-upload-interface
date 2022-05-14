@@ -1,0 +1,29 @@
+' Gambas class file
+
+
+
+Public Sub form_Close()
+  
+
+  
+End
+
+Public Sub Form_Open()
+Dim f1 As File
+f1 = Open "/tmp/binupload" For Create 
+Close f1
+f1 = Open "/tmp/binupload.out" For Create 
+Close f1
+f1.Save("/tmp/binupload", "")
+f1.Save("/tmp/binupload.out", "")
+  
+
+End
+Public Sub Button1_Click()
+Dim f1 As File
+Dim a As String 
+Dim aa As String 
+  Shell "xxd " & TextBox3.text & " > /tmp/binupload ;netcat " & TextBox1.Text & " " & TextBox2.Text & "  < /tmp/binupload" 
+  Sleep 8
+End
+
